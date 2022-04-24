@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 })*/
 
 
-require('./controllers/authController')(app);
-require('./controllers/projectController')(app);
+require('./app/controllers/index.js')(app);
+
 
 app.listen(3000, () => console.log('Online...'));
