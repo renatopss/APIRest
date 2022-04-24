@@ -7,7 +7,7 @@ module.exports = (req, res, next) => {
     if(!authHeader)
         return res.status(401).send({ error: 'Token não informado' });
 
-    //formato de token = Bearer sdbuqh219rehdf9234r
+    //formato de token = Bearer HEX
     const parts = authHeader.split(' ');
 
     if(!parts.length === 2)
